@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio-Moiz</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="p-4 font-mono bg-neutral-950">
+        <div class="mx-auto flex justify-between items-center">
+          <!-- Logo -->
+          <a href="#" class="text-white text-xl md:text-2xl font-semibold">M.Moiz</a>
+          <!-- Desktop Menu -->
+          <div class="flex space-x-2 md:space-x-10">
+            <a href="#" class="text-xs md:text-sm text-white hover:text-yellow-500">Home</a>
+            <a href="#" class="text-xs md:text-sm text-white hover:text-yellow-500">About</a>
+            <a href="#" class="text-xs md:text-sm text-white hover:text-yellow-500">Services</a>
+            <a href="#" class="text-xs md:text-sm text-white hover:text-yellow-500">Contact</a>
+          </div>
+    </nav>
+
+    <!--banner-->
+    <section class="bg-[url('my.jpg')] bg-cover bg-center h-screen">
+        <div class="content flex flex-col items-left justify-left font-mono bg-neutral-950 bg-opacity-75 p-5 md:p-32 h-screen justify-center">
+             <p class="text-xl md:text-3xl text-white">I'm <h2 class="text-4xl md:text-6xl font-bold mt-5 text-yellow-500">Muhammad Moiz.</h2></p>
+             <p class="text-xl md:text-3xl mt-5 text-white">Full-Stack Web <br><span class="italic">Developer</span></p>
+             <button class="mt-5 text-yellow-500" style="border: 2px solid; border-radius: 10px; background-color: transparent; padding: 15px; font-weight: bold; width: 150px;" type="button">Contact Us</button>
+        </div>
+    </section>
+    
+
+    <!--About-->
+    <section>
+        <div class="bg-neutral-950 font-mono p-4 md:p-32">
+            <h1 class="text-2xl md:text-4xl pb-4 font-bold mt-1 text-white">About.</h1>
+            <!--line break-->
+            <div style="width:100% ;display:flex; justify-content:left;">
+                <div style="height: 5px; background-color: rgb(234 179 8); display: flex; width:100%;  margin-bottom: 30px; margin-top: 10px; ">
+                </div>
+            </div>
+            <p class="flex flex-row text-left text-sm md:text-xl text-white ">Hey! I'm full stack web developer, manage both front-end and back-end tasks. Create user interfaces with HTML, CSS, and JavaScript (using frameworks like React or Vue) and handle server-side functionality, databases, and APIs with Node.js, Python, or PHP (using frameworks like Express or Django). Your role ensures smooth interaction between client and server, optimizes performance, and maintains efficient data handling.</p>
+            <button class="mt-5 text-yellow-500" style="border: 2px solid; border-radius: 10px; background-color: transparent; padding: 15px; font-weight: bold;" type="button">About Us</button>
+        </div>
+    </section>   
+
+    <!--Experience-->
+    <section>
+        <div class="bg-neutral-950 font-mono p-4 md:p-32">
+            <h1 class="text-2xl md:text-4xl pb-4 font-bold mt-1 text-white">Experience.</h1>
+            <!--line break-->
+            <div style="width:100% ;display:flex; justify-content:left;">
+                <div style="height: 5px; background-color: rgb(234 179 8); display: flex; width:100%;  margin-bottom: 30px; margin-top: 10px; ">
+                </div>
+            </div>
+        <ul class="text-sm md:text-xl text-white p-4">
+            <li class="list-disc pb-5">Senior Full-Stack Developer (2026) <p style="color:rgb(146, 142, 129);">Neuro Oceans , Lahore</p></li>
+            <li class="list-disc pb-5">Front-End Developer (2025) <p style="color:rgb(146, 142, 129);;">Code District , Lahore</p></li>
+            <li class="list-disc pb-5">Front-End Developer (Intern) <p style="color:rgb(146, 142, 129);">Freelance , Remote</p></li>
+        </ul>
+        <button class="mt-5 text-yellow-500" style="border: 2px solid; border-radius: 10px; background-color: transparent; padding: 15px; font-weight: bold;" type="button">My Experience</button>
+        </div>
+    </section>
+
+    <!--Projects-->
+    <section>
+        <div class="bg-neutral-950 font-mono p-4 md:p-32">
+            <div>
+                <h1 class="text-2xl md:text-4xl pb-4 font-bold mt-1 text-white">Projects.</h1>
+            </div>
+            <!--line break-->
+            <div style="width:100% ;display:flex; justify-content:left;">
+                <div style="height: 5px; background-color: rgb(234 179 8); display: flex; width:100%;  margin-bottom: 30px; margin-top: 10px; ">
+                </div>
+            </div>
+
+            <!--containers-->
+            <div class="flex md:flex-row flex-col gap-5 md:max-w-6xl h-auto mt-5 rounded-md justify-center">
+
+                <div style="background-color:rgb(146, 142, 129);" class="card rounded-lg  text-center overflow-hidden">
+                  <img src="./cal.png" alt="Card 1">
+                  <div class="card-content">
+                    <h1 class="text-xl md:text-2xl italic pt-4 font-bold mt-1 text-yellow-500">Calculator</h1>
+                    <p class="text-white p-5 text-sm md:text-xl">This is a Scientific Calculator, code with HTML, Tailwind CSS and JS.</p>
+                  </div>
+                </div>
+            
+                <div style="background-color:rgb(146, 142, 129);" class="card bg-slate-200 rounded-lg  text-center overflow-hidden">
+                  <img src="./colorlib.png" alt="Card 2">
+                  <div class="card-content">
+                    <h1 class="text-xl md:text-2xl italic pt-4 font-bold mt-1 text-yellow-500">Website Clone</h1>
+                    <p class="text-white p-5 text-sm md:text-xl">This is a clone taken from colorlib using HTML, Tailwind CSS and JS.</p>
+                  </div>
+                </div>
+            
+                <div style="background-color:rgb(146, 142, 129);" class="card bg-slate-200 rounded-lg  text-center overflow-hidden">
+                  <img src="./todo.png" alt="Card 3">
+                  <div class="card-content">
+                    <h1 class="text-xl md:text-2xl italic pt-4 font-bold mt-1 text-yellow-500">To-Do Website</h1>
+                    <p class="text-white p-5 text-sm md:text-xl">This is the to-do website, used to make users manage their tasks.</p>
+                  </div>
+                </div>
+                </div>
+                <button class="mt-5 text-yellow-500" style="border: 2px solid; border-radius: 10px; background-color: transparent; padding: 15px; margin-top: 50px; font-weight: bold;" type="button">Explore Us!</button>
+        </div>
+    </section>
+
+    <!--contact-->
+    <section>
+        <div class="bg-neutral-950 font-mono p-4 md:p-32 text-left">
+            <h1 class="text-2xl md:text-4xl pb-4 font-bold  text-white">Contact.</h1>
+            <!--line break-->
+            <div style="width:100% ;display:flex; justify-content:left;">
+                <div style="height: 5px; background-color: rgb(234 179 8); display: flex; width:100%;  margin-bottom: 30px; margin-top: 10px; ">
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row  text-left md:text-center justify-between">
+                <div class="flex flex-col">
+                    <div class="flex flex-row p-5">
+                        <svg class="h-8 w-8 text-slate-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                          </svg>
+                        <p class="flex flex-row text-left text-sm md:text-xl text-white pl-5">Lahore , Pakistan</p>
+                    </div>
+                    <div class="flex flex-row p-5">
+                        <svg class="h-8 w-8 text-slate-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                        <p class="flex flex-row text-left text-sm md:text-xl text-white pl-5">+92-330-4188788</p>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex flex-row p-5">
+                        <svg class="h-8 w-8 text-slate-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />  <polyline points="22,6 12,13 2,6" /></svg>
+                        <p class="flex flex-row text-left text-sm md:text-xl text-white pl-5">m.moiz.irfan@gmail.com</p>
+                    </div>
+                    <div class="flex flex-row p-5">
+                        <svg class="h-8 w-8 text-slate-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" /></svg>
+                        <p class="flex flex-row text-left text-sm md:text-xl text-white pl-5">M.Moiz</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>  
+
+    <!--footer-->
+    <footer class="bg-neutral-950 font-mono p-4 md:p-32 mt- flex flex-col md:flex-row justify-between">
+        <div>
+            <h6 class="text-sm font-bold mt-1 text-yellow-500">About Us</h6>
+            <p class="text-left text-xs pb-4 text-white">We are created beautiful and Responsive <br>websites. Feel free to contact us for massive websites.</br></p>
+        </div>
+        <div>
+            <h6 class="text-sm font-bold mt-1 text-yellow-500">Our Theme</h6>
+            <p class="text-left text-xs pb-4 text-white">Reached out for our best themes with contrast color combinations.</p>
+        </div>
+        <div>
+            <h6 class="text-sm font-bold mt- text-yellow-500">Recent Projects</h6>
+            <p class="text-left text-xs text-white">Youtube</p>
+            <p class="text-left text-xs text-white">Facebook</p>
+            <p class="text-left text-xs text-white">Instagram</p>
+        </div>
+    </footer>
+    
+    <div class="bg-neutral-800 font-mono p-4 mt- text-white text-xs justify-center text-center 'sm':'640px',">
+        Theme: Dark · Made with 💛 by M.Moiz · © Copyright 2024. All Rights Reserved
+    </div>
+</body>
+</html>
